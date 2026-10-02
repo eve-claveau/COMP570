@@ -1,0 +1,6 @@
+--2026-10-02 01:49:33--  https://storage.googleapis.com/kaggle-data-sets/127846/309658/compressed/clean_dialog.csv.zip?X-Goog-Algorithm=GOOG4-RSA-SHA256
+Resolving storage.googleapis.com (storage.googleapis.com)... 142.250.31.207, 192.179.24.207, 172.253.115.207, ...
+Connecting to storage.googleapis.com (storage.googleapis.com)|142.250.31.207|:443... connected.
+HTTP request sent, awaiting response... 400 Bad Request
+2026-10-02 01:49:33 ERROR 400: Bad Request.
+
