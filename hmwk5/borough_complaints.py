@@ -2,7 +2,7 @@
 
 import argparse
 import csv
-from datetime import date
+from datetime import datetime, date
 
 def main():
     parser = argparse.ArgumentParser()
@@ -16,12 +16,11 @@ def main():
     records = {}
     with open(args.input, 'r') as fi:
         reader = csv.reader(fi)
-        header = next(reader)
-        count += 1
+        head = next(reader)
         for line in reader:
             obj1 = datetime.strptime(args.start_date, "%Y/%m/%d").date()
             obj2 = datetime.strptime(args.end_date, "%Y/%m/%d").date()
-            date1 = (line[1][6:], line[1][0:2], line[1][3:5])
+            date1 = date(int(line[1][6:10]), int(line[1][0:2]), int(line[1][3:5]))
             if obj1 <= date1 <= obj2:
                 if (line[5], line[25]) in records:
                     records[(line[5], line[25])] += 1
