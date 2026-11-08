@@ -8,7 +8,11 @@ def main():
     print(len(new_element))
     for e in new_element:
         print(e.text)
-    
+
 
 if __name__ == "__main__":
     main()
+    
+    
+    
+    
